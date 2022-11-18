@@ -1,0 +1,19 @@
+/* color h1 purple */
+h1 {
+    color: purple;
+}
+
+/* color just the direct h2 children of a section blue */
+section>h2 {
+    color: blue;
+}
+
+/* color all h2's within an article red */
+article>h2 {
+    color: red;
+}
+
+/* Get the unicorn h2 within the article within the section */
+section article h2 {
+    color: orange;
+}
