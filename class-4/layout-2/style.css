@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 900px;
+}
+
+
+.full-row {
+    clear: both;
+    height: 125px;
+    text-align: center;
+    background-color: lightgreen;
+    border: 1px solid lightgrey;
+}
+
+.big {
+    background-color: lightcoral;
+    height: 150px;
+}
+
+.row-3 {
+    height: 175px;
+}
+
+.row-3 p {
+    border: 1px solid lightgrey;
+    margin: 0;
+}
+
+.row-3 :first-child {
+    float: left;
+    width: 33%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.row-3 :last-child {
+    float: left;
+    width: 67%;
+    height: 100%;
+    background-color: lightskyblue;
+}
