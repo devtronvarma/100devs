@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 900px;
+}
+
+.full-row {
+    background-color: lightblue;
+    border: 2px solid lightgray;
+    text-align: center;
+    height: 150px;
+    clear: both;
+}
+
+.col {
+    background-color: lightcyan;
+    border: 2px solid lightgray;
+    width: 20%;
+    height: 700px;
+    float: left;
+}
+
+.double {
+    background-color: lightsalmon;
+    width: 40%;
+    float: left;
+}
