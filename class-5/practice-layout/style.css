@@ -1,0 +1,16 @@
+.full-row {
+    clear: both;
+    height: 200px;
+    border: 2px solid lightgray;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+section {
+    float: left;
+    height: 400px;
+    width: 33%;
+    border: 2px solid lightgray;
+    background-color: lightblue;
+    text-align: center;
+}
