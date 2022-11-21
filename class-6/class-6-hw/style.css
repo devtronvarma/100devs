@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.fullRow {
+    height: 200px;
+    border: 5px solid gray;
+    clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+    section {
+        width: 33.33%;
+        height: 300px;
+        border: 5px solid gray;
+        background-color: antiquewhite;
+    }
+}
+
+@media screen and (min-width:600px) {
+    section {
+        width: 33.33%;
+        height: 300px;
+        border: 5px solid gray;
+        background-color: lightblue;
+    }
+}
+
+@media screen and (min-width:900px) {
+    section {
+        width: 33.33%;
+        height: 300px;
+        float: left;
+        border: 5px solid gray;
+        background-color: black;
+        color: whitesmoke;
+    }
+}
