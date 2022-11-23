@@ -21,29 +21,134 @@
 /* BASE STYLES
 /*******************************************/
 
-body {}
+body {
+  margin: 1rem;
+  font-family: sans-serif
+}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {}
-
-footer {}
 
 nav,
 main,
 aside {
   float: left;
-  width: 10%
+  width: 10%;
+  padding-left: 1rem;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li a {
+  color: #aeaeae;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 50%;
+  display: block;
+  padding-block: 2rem;
+}
+
+.logo+a {
+  color: goldenrod;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo+a+a {
+  display: block;
+  color: #aeaeae;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 main {
-  width: 40%
+  width: 45%
+}
+
+main>img {
+  width: 100%;
+  display: block;
+}
+
+main p {
+  color: #aeaeae;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+main span {
+  display: block;
+  color: #787878;
+  margin-bottom: 1rem;
 }
 
 aside {
-  width: 40%;
+  width: 30%;
+}
+
+.other-articles {
+  list-style: none;
+}
+
+.other-articles li {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #aeaeae;
+}
+
+.other-articles li h2 {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.other-articles span {
+  color: #787878;
+  margin-bottom: 1rem;
+}
+
+.latest {
+  display: block;
+  clear: both;
+  float: left;
+  margin-left: 17rem;
+  width: 80%;
+}
+
+th {
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+td {
+  width: 33.33%;
+  vertical-align: top;
+  padding: 1.5rem;
+  border-top: 1px solid #aeaeae;
+}
+
+td img {
+  width: 90%;
+}
+
+td p {
+  color: #787878;
+}
+
+td>span+span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #787878;
 }
 
 /******************************************
