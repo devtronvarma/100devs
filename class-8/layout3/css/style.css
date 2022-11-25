@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,19 +22,131 @@
 /*******************************************/
 
 body {
-
+  margin: 0;
+  font-family: sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+nav {
+  height: 70px;
+  background-color: black;
+  padding-top: 0.5rem;
 }
 
-footer {
+nav img {
+  width: 10%;
+  padding-left: 2rem;
+  float: left;
+  margin: 16px 0;
+}
 
+.nav-links {
+  float: left;
+  width: 90%;
+}
+
+.nav-links li {
+  display: inline;
+  border-left: 1.5px solid whitesmoke;
+}
+
+.nav-links li a {
+  display: inline-block;
+  height: 100%;
+  width: 7%;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.nav-links li form {
+  display: inline;
+  padding-left: 2rem;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  display: block;
+  width: 50%;
+  text-align: left;
+  padding-left: 2rem;
+  clear: both;
+  float: left;
+  font-size: 28px;
+}
+
+header h2 {
+  display: block;
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-right: 4.25rem;
+  color: grey;
+  font-size: 28px;
+}
+
+.top-story {
+  clear: both;
+  float: left;
+  width: 50%;
+  margin-left: 2rem;
+  padding: 18rem 10px;
+  background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/1676D/production/_113931029_composite.jpg.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: rgba(255, 255, 255);
+  text-shadow: 2px 2px grey;
+}
+
+.other-top-stories {
+  float: right;
+  width: 47%;
+  height: 26.5rem;
+  color: whitesmoke;
+  text-shadow: 2px 2px grey;
+}
+
+.other-top-stories>* {
+  padding-top: 6rem;
+  padding-left: 1rem;
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 45%;
+}
+
+.other-top-story-a {
+  background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/08C0/production/_113904220_banff.jpg.webp');
+  float: left;
+  margin-right: 0.25rem;
+}
+
+.other-top-story-b {
+  background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/A632/production/_111864524_2020-04-18t130112z_2061940609_rc217g9mtg9h_rtrmadp_3_health-coronavirus-vaccine-oxford.jpg.webp');
+  float: left;
+}
+
+.other-top-story-c {
+  background-image: url('https://ychef.files.bbci.co.uk/1600x900/p08nh0rv.webp');
+  clear: both;
+  float: left;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.other-top-story-d {
+  background-image: url('https://ychef.files.bbci.co.uk/1600x900/p08ncd1n.webp');
+  float: left;
+  margin-top: 0.25rem;
 }
 
 /******************************************
