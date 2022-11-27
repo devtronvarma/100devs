@@ -69,7 +69,7 @@ nav img {
   margin-top: 1.5rem;
   background-color: white;
   color: rgb(105, 118, 136);
-  margin-left: 35%;
+  margin-left: 40%;
   border-radius: 6px;
   padding: 8px;
 }
@@ -105,6 +105,120 @@ nav img {
   display: block;
   width: 100%;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.why {
+  height: 25rem;
+  width: 100%;
+  color: rgb(105, 118, 136);
+  background-color: white;
+  clear: both;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.why p {
+  display: block;
+  width: 70%;
+  margin-left: 14rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.visit {
+  height: 35rem;
+  width: 100%;
+  background-color: lightgray;
+  color: rgb(105, 118, 136);
+  font-weight: bold;
+}
+
+.visit section {
+  float: left;
+  width: 45%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.visit div {
+  margin: 5rem auto 2rem auto;
+  height: 200px;
+  width: 400px;
+  background-color: white;
+  padding: 4rem;
+}
+
+.visit h2 {
+  display: block;
+  margin: auto;
+  height: 2rem;
+  width: 20rem;
+}
+
+.visit p {
+  display: block;
+  margin: 2rem auto 1rem auto;
+  height: 6rem;
+  width: 28rem;
+}
+
+.visit a {
+  display: block;
+  margin: 0 16rem;
+  height: 2.5rem;
+  width: 10rem;
+  color: rgb(105, 118, 136);
+  padding: 8px;
+  border: 2px solid rgb(105, 118, 136);
+  border-radius: 6px;
+}
+
+.volunteer {
+  clear: both;
+  height: 35rem;
+  width: 100%;
+  background-color: white;
+  margin-top: 0;
+  padding-top: 4rem;
+}
+
+.volunteer h2 {
+  display: block;
+  margin: auto;
+  height: 8rem;
+  width: 60rem;
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.volunteer p {
+  display: block;
+  margin: auto;
+  height: 8rem;
+  width: 60rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.volunteer a {
+  display: block;
+  margin: auto 50%;
+  padding: 8px;
+  border: 2px solid rgb(105, 118, 136);
+  border-radius: 8px;
+  color: rgb(105, 118, 136)
 }
 
 header {}
