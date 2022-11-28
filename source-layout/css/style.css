@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 main {
   background-color: rgb(245, 249, 252);
-  height: 40rem;
+  height: 35rem;
   padding-left: 9rem;
   padding-top: 8rem
 }
@@ -120,6 +120,32 @@ main p {
   color: rgb(44, 68, 88);
   line-height: 1.25;
   width: 350px;
+}
+
+/* FEATURE SET SECTION */
+.feature-set {
+  height: 20rem;
+  background-color: rgb(245, 249, 252);
+  color: rgb(44, 68, 88);
+}
+
+.feature-set>section {
+  margin-left: 9rem;
+}
+
+.feature-set section {
+  float: left;
+  width: 220px;
+}
+
+.feature-set h2 {
+  margin-top: 0;
+}
+
+.feature-set a {
+  text-decoration: none;
+  color: rgb(44, 68, 88);
+  font-weight: bold;
 }
 
 /******************************************
