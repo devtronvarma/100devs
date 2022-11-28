@@ -150,6 +150,32 @@ main p {
 
 /* DEEP DIVE SECTION */
 
+.deep-dive {
+  clear: both;
+  padding-left: 9rem;
+  padding-top: 3rem;
+}
+
+.deep-dive h2 {
+  font-size: 2rem;
+  width: 400px;
+  color: rgb(44, 68, 88);
+}
+
+.deep-dive p {
+  width: 550px;
+  line-height: 1.5;
+  color: rgb(133, 154, 174);
+  margin-bottom: 1rem;
+}
+
+.img-placeholder {
+  width: 90%;
+  height: 600px;
+  background-color: rgb(226, 234, 240);
+  margin: 2rem 0;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
