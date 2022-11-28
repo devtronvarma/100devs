@@ -24,7 +24,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: rgb(105, 118, 136);
+  background-color: rgb(24, 31, 41);
 }
 
 
@@ -32,7 +32,7 @@ body {
 /* LAYOUT
 /*******************************************/
 nav {
-  height: 6rem;
+  height: 7rem;
   background-color: rgb(105, 118, 136);
   color: white;
   font-size: 1rem;
@@ -52,7 +52,7 @@ nav {
   text-align: center;
 }
 
-a {
+nav a {
   float: left;
   margin-top: 2rem;
   text-decoration: none;
@@ -75,19 +75,23 @@ nav img {
 }
 
 .hero {
-  height: 15rem;
+  height: 40rem;
   width: 100%;
   color: white;
   background-color: rgb(105, 118, 136);
   clear: both;
   margin-top: 0;
+  text-align: center;
 }
 
 .hero h1 {
+
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  padding-top: 10rem;
+  margin-top: 0;
 }
 
 .hero p {
@@ -96,9 +100,7 @@ nav img {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.15;
-  text-align: center;
-  margin-top: 5rem;
-  margin-left: 14rem;
+  margin: 5rem auto 10rem auto;
 }
 
 .hero a {
@@ -106,20 +108,22 @@ nav img {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
+  text-decoration: none;
+  color: white;
 }
 
 .why {
-  height: 25rem;
+  height: 40rem;
   width: 100%;
   color: rgb(105, 118, 136);
   background-color: white;
   clear: both;
-  margin-top: 2rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
   text-align: center;
 }
 
 .why h2 {
+  margin-top: 10rem;
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -136,52 +140,45 @@ nav img {
 }
 
 .visit {
-  height: 35rem;
-  width: 100%;
-  background-color: lightgray;
-  color: rgb(105, 118, 136);
-  font-weight: bold;
-}
-
-.visit section {
-  float: left;
-  width: 45%;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  display: block;
   text-align: center;
+  float: left;
+  width: 50%;
+  height: 40rem;
+  background-color: rgb(220, 223, 226);
+  color: rgb(58, 64, 73);
 }
 
 .visit div {
-  margin: 5rem auto 2rem auto;
-  height: 200px;
-  width: 400px;
-  background-color: white;
-  padding: 4rem;
+  display: block;
+  width: 25rem;
+  height: 15rem;
+  background-color: rgb(105, 118, 136);
+  margin: 5rem auto 1rem auto;
 }
 
-.visit h2 {
-  display: block;
-  margin: auto;
-  height: 2rem;
-  width: 20rem;
+.visit div p {
+  padding: 6rem auto;
 }
 
 .visit p {
-  display: block;
-  margin: 2rem auto 1rem auto;
-  height: 6rem;
-  width: 28rem;
+  margin: 2rem auto;
+  width: 20rem
 }
 
 .visit a {
-  display: block;
-  margin: 0 16rem;
-  height: 2.5rem;
-  width: 10rem;
-  color: rgb(105, 118, 136);
-  padding: 8px;
-  border: 2px solid rgb(105, 118, 136);
-  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  padding: 16px;
+  border: 2px solid rgb(168, 169, 170);
+  color: rgb(58, 64, 73);
+  border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
 .volunteer {
@@ -191,39 +188,54 @@ nav img {
   background-color: white;
   margin-top: 0;
   padding-top: 4rem;
+  text-align: center;
 }
 
 .volunteer h2 {
-  display: block;
   margin: auto;
   height: 8rem;
-  width: 60rem;
   font-size: 3rem;
-  text-align: center;
-  padding: 2rem 0;
 }
 
 .volunteer p {
-  display: block;
   margin: auto;
   height: 8rem;
   width: 60rem;
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .volunteer a {
-  display: block;
-  margin: auto 50%;
-  padding: 8px;
-  border: 2px solid rgb(105, 118, 136);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  padding: 16px;
+  border: 2px solid rgb(168, 169, 170);
   border-radius: 8px;
-  color: rgb(105, 118, 136)
+  color: rgb(58, 64, 73);
 }
 
-header {}
+footer {
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(24, 31, 41);
+  color: white;
+}
 
-footer {}
+.footer-left {
+  padding-top: 2rem;
+  width: 80%;
+}
+
+.footer-left li {
+  display: inline-block;
+  width: 60px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
