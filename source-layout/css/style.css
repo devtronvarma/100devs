@@ -35,12 +35,13 @@ body {
 /* LAYOUT
 /*******************************************/
 
+/* NAVBAR */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: lightgrey;
+  background-color: rgb(245, 249, 252);
 }
 
 nav ul li {
@@ -76,6 +77,49 @@ nav ul li a {
 nav ul li a:hover {
   background-color: rgb(44, 68, 88);
   color: white;
+}
+
+/* MAIN */
+
+main {
+  background-color: rgb(245, 249, 252);
+  height: 40rem;
+  padding-left: 9rem;
+  padding-top: 8rem
+}
+
+main span {
+  color: rgb(133, 154, 174);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+main h1 {
+  width: 300px;
+  color: rgb(44, 68, 88);
+  margin-bottom: 2rem;
+}
+
+main input {
+  height: 2.5rem;
+  width: 18rem;
+  background-color: rgb(226, 234, 240);
+  border: none;
+  margin-bottom: 1rem;
+}
+
+main button {
+  height: 2.5rem;
+  width: 6rem;
+  background-color: rgb(44, 68, 88);
+  color: white;
+  border: 0;
+}
+
+main p {
+  color: rgb(44, 68, 88);
+  line-height: 1.25;
+  width: 350px;
 }
 
 /******************************************
