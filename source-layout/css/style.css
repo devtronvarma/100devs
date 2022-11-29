@@ -52,6 +52,7 @@ nav {
 }
 
 .nav-btn {
+  text-decoration: none;
   padding: 10px 18px;
   color: white;
   background-color: rgb(44, 68, 88);
@@ -66,7 +67,7 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 87%;
+  width: 80%;
 }
 
 nav ul li {
@@ -86,6 +87,14 @@ nav ul li a:hover {
   color: white;
 }
 
+nav .fa-bars {
+  text-decoration: none;
+  font-size: 32px;
+  color: rgb(133, 154, 174);
+  padding: 1rem 2rem;
+  float: left;
+  display: none;
+}
 
 /* MAIN */
 
@@ -99,7 +108,7 @@ main {
 main span {
   color: rgb(133, 154, 174);
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
 main h1 {
@@ -148,7 +157,7 @@ main p {
 
 .feature-set h2 {
   margin-top: 0;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .feature-set a {
@@ -188,3 +197,48 @@ main p {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-width: 600px) {
+
+  html {
+    font-size: 32px;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(133, 154, 174);
+  }
+
+  nav ul,
+  .nav-btn {
+    display: none;
+  }
+
+  nav .fa-bars {
+    display: block;
+  }
+
+  main {
+    padding-left: 2rem;
+    width: 1000px;
+  }
+
+  main>* {
+    width: 100%;
+  }
+
+  main h1,
+  main p {
+    width: 600px;
+  }
+
+  main input {
+    display: block;
+  }
+
+  main button {
+    width: 18rem;
+  }
+}
