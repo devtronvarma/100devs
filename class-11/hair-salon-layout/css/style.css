@@ -135,6 +135,41 @@ main>a {
   color: black;
 }
 
+/* ABOUT SECTION */
+.about {
+  width: 80%;
+  height: 20rem;
+  margin: 0 10%;
+  padding-top: 4rem;
+}
+
+.about section {
+  margin: 0;
+  padding: 0 0 5rem;
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+
+.placeholder-small {
+  width: 150px;
+  height: 150px;
+  border: 5px solid lightslategray;
+  margin: 0 auto;
+}
+
+.about h3 {
+  text-transform: uppercase;
+}
+
+.about p {
+  display: block;
+  width: 200px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
