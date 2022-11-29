@@ -81,7 +81,7 @@ nav {
 
 /* MAIN */
 main {
-  height: 40rem;
+  height: 50rem;
   background: linear-gradient(rgb(223, 234, 238), rgb(245 249 250));
 }
 
@@ -137,8 +137,8 @@ main span {
 
 /* ABOUT */
 .about {
-  height: 40rem;
-  padding: 9rem 0 0 40rem;
+  height: 50rem;
+  padding: 9rem 0 0 30rem;
 }
 
 .about span {
@@ -169,6 +169,68 @@ main span {
   color: white;
   border: none;
   border-radius: 4px;
+}
+
+/* ONLINE ORDER */
+.online-order {
+  padding-top: 4rem;
+  height: 50rem;
+  background: linear-gradient(rgb(223, 234, 238), rgb(245 249 250));
+  text-align: center;
+}
+
+.online-order span {
+  color: rgb(255 136 0);
+  font-size: 1.25rem;
+}
+
+.online-order h2 {
+  font-size: 3.5rem;
+  margin-top: 1rem
+}
+
+.online-order .order-categories {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content
+}
+
+.online-order .order-categories li {
+  display: inline-block;
+}
+
+.online-order .order-categories a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 150px;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid lightgray;
+  ;
+}
+
+.online-order .order-categories a:hover {
+  border-bottom: 1px solid rgb(255 136 0);
+  color: rgb(255 136 0);
+}
+
+.online-order .image-gallery {
+  margin: 2rem auto;
+  text-align: center;
+  width: fit-content;
+  list-style-type: none;
+}
+
+.image-gallery li {
+  display: inline-block;
+  margin: 2rem;
+}
+
+.image-gallery .placeholder-img {
+  display: block;
+  width: 250px;
+  height: 400px;
+  border: 10px solid gray;
 }
 
 /******************************************
