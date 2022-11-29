@@ -5,36 +5,68 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
+html {
+  font-size: 100%;
+}
 
+body {
+  font-family: 'Libre Carlson Text', serif;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+nav {
+  height: 4rem;
+  border-bottom: 1px solid lightgray;
 }
 
-footer {
+nav ul {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%
+}
 
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0 3rem 2rem 3rem;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: lightgray;
+  font-weight: 700;
+}
+
+.navEnd {
+  display: inline-block;
+  font-size: 1.25rem;
 }
 
 /******************************************
