@@ -64,11 +64,11 @@ main section,
   * {
     background-color: lightgreen;
   }
+}
 
-
-  /* On larger screens, please keep the normal layout, but everything should be light blue */
-  @media all and (min-width: 1024px) {
-    * {
-      background-color: lightblue;
-    }
+/* On larger screens, please keep the normal layout, but everything should be light blue */
+@media all and (min-width: 1024px) {
+  * {
+    background-color: lightblue;
   }
+}
