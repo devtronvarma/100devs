@@ -5,36 +5,75 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-
+html {
+  font-size: 100%;
 }
 
+body {
+  font-family: 'Lato', sans-serif
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+nav {
+  margin: 0 2rem;
 }
 
-footer {
+.logo {
+  display: block;
+  float: left;
+  font-weight: 800;
+  margin: 0 10%;
+  padding: 1rem 0;
+}
 
+.nav-links {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  margin: 0 2% 0 0;
+  padding: 0;
+  width: 60%;
+}
+
+.nav-links li {
+  margin: 0;
+  display: block;
+  float: left;
+  width: 16.666%;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 1.5rem 0;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  color: grey;
+}
+
+.nav-icons {
+  display: block;
+  float: left;
+  width: 5%;
 }
 
 /******************************************
