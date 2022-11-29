@@ -33,6 +33,8 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* NAV */
 nav {
   height: 4rem;
   border-bottom: 1px solid lightgray;
@@ -53,7 +55,7 @@ nav ul li {
 
 nav ul li a {
   display: inline-block;
-  padding: 0 3rem 2rem 3rem;
+  padding: 0 2rem 2rem 3rem;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -67,6 +69,70 @@ nav ul li a:hover {
 .navEnd {
   display: inline-block;
   font-size: 1.25rem;
+}
+
+/* MAIN */
+main {
+  height: 70rem;
+  background-color: darkgrey;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 9rem;
+}
+
+main h1 {
+  padding-top: 15rem;
+  font-size: 5rem;
+  width: 800px;
+  margin-bottom: 1rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+main>a {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-bottom: 4rem;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+/* COUPON SECTION */
+.coupon {
+  width: 300px;
+  height: 350px;
+  background-color: black;
+}
+
+.coupon h3 {
+  margin: 0 0 2rem 2rem;
+  padding-top: 3rem;
+}
+
+.coupon p,
+.coupon a {
+  margin: 0 0 2rem 2rem;
+}
+
+.coupon p {
+  font-size: 1.5rem;
+}
+
+.coupon span {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.coupon a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background-color: white;
+  color: black;
 }
 
 /******************************************
