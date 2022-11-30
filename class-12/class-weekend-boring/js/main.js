@@ -1,22 +1,15 @@
-document.querySelector('#check').addEventListener('click', check)
-
-const output = document.querySelector('#placeToSee')
+document.querySelector('#check').addEventListener('click', check);
 
 function check() {
+  const day = document.querySelector('#day').value.toUpperCase();
 
-  const day = document.querySelector('#day').value.toUpperCase()
+  const resultLocation = document.querySelector('#placeToSee');
 
-  let result = '';
-
-  //Conditionals go here
   if (day === 'TUESDAY' || day === 'THURSDAY') {
-    result = 'Class!'
+    resultLocation.innerHTML = 'Class day!'
   } else if (day === 'SATURDAY' || day === 'SUNDAY') {
-    result = 'Weekend!'
+    resultLocation.innerHTML = 'It\'s the Weekend!'
   } else {
-    result = 'Yawn! Boring.'
+    resultLocation.innerHTML = 'Well, that\'s boring.'
   }
-
-  output.innerHTML = result;
-
 }
