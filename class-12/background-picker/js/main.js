@@ -1,27 +1,26 @@
-document.getElementById('purple').onclick = partyPurple
-document.getElementById('green').onclick = partyGreen
-document.getElementById('blue').onclick = partyBlue
-document.getElementById('dodgerBlue').addEventListener('click', partyDodgerBlue);
+document.querySelector('#purple').addEventListener('click', setPurple);
+document.querySelector('#green').addEventListener('click', setGreen);
+document.querySelector('#blue').addEventListener('click', setBlue);
+document.querySelector('#dodgerBlue').addEventListener('click', setDodgerBlue);
 
+const body = document.querySelector('body');
 
-let body = document.querySelector('body');
+function setPurple() {
+  body.style.backgroundColor = 'rgba(241, 63, 247, 1)';
+  body.style.color = 'white';
+};
 
-function partyPurple() {
-  body.style.backgroundColor = 'rgba(241,63,247,1)'
-  body.style.color = 'white'
+function setGreen() {
+  body.style.backgroundColor = 'rgba(0, 253, 81, 1)';
+  body.style.color = 'white';
 }
 
-function partyGreen() {
-  body.style.backgroundColor = 'rgba(0,253,81,1)'
-  document.querySelector('body').style.color = 'white'
+function setBlue() {
+  body.style.backgroundColor = 'rgba(0, 254, 255)';
+  body.style.color = 'white';
 }
 
-function partyBlue() {
-  body.style.backgroundColor = 'rgba(0,254,255)'
-  document.querySelector('body').style.color = 'white'
-}
-
-function partyDodgerBlue() {
+function setDodgerBlue() {
   body.style.backgroundColor = 'dodgerblue';
-  body.style.color = 'white'
+  body.style.color = 'white';
 }
