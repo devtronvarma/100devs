@@ -1,16 +1,18 @@
-//Write your pseduo code first!
-
-// Get a smurf to listen for a button click
 document.querySelector('#submit').addEventListener('click', convert)
 
-
 function convert() {
-    // Need to value that is in celsius
-    const celsius = document.querySelector('#celsius').value
+    const fromFarenheit = document.querySelector('#farenheit').checked
 
-    // When the button clicks, do the math to convert
-    const convertedTemp = (celsius * 9 / 5) + 32
+    let converted = document.querySelector('#temperature').value
+    let outputString;
 
-    // Output the converted number to the DOM
-    document.querySelector('#output').innerHTML = convertedTemp;
+    if (fromFarenheit) {
+        converted = converted * 5 / 9 - 32;
+        outputString = `${converted} °C`
+    } else {
+        converted = converted * 9 / 5 + 32
+        outputString = `${converted} °F`
+    }
+
+    document.querySelector('#output').innerText = outputString;
 }

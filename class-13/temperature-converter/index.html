@@ -15,8 +15,12 @@
 
 <body>
 	<form>
-		<label for="celsius">Temp</label>
-		<input type="text" id="celsius" placeholder="in Celsius">
+		<label for="temperature">Temperature</label>
+		<input type="text" id="temperature" placeholder=" From">
+		<input type="radio" name="units" id="farenheit">
+		<label for="farenheit">&#176F</label>
+		<input type="radio" name="units" id="celsius">
+		<label for="farenheit">&#176C</label>
 	</form>
 	<button type="submit" id="submit">Convert</button>
 	<h2 id="output"></h2>
