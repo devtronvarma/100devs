@@ -1,32 +1,22 @@
-document.querySelector('#yell').addEventListener('click', run)
+// PSEUDO CODE
+// When the yell button clicked,
+// Take the first name
+// Take the middle name
+// Take the last name
+// Capitalize all of them
+// Concatenate them together
+// Show them
 
-function run() {
-  const fName = document.querySelector('#firstName').value
-  const fMidName = document.querySelector('#firstMiddle').value
-  const lMidName = document.querySelector('#lastMiddle').value
-  const lName = document.querySelector('#lastName').value
+document.querySelector('#yell').addEventListener('click', yell)
 
-  // document.querySelector('#placeToYell').innerText = fName + ' ' + fMidName + ' ' + ' ' + lMidName + ' ' + lName
+function yell() {
+  const nameThings = document.querySelectorAll('.name')
+  let names = []
 
-  //Add what you should be doing - conditionals go here
+  nameThings.forEach(node => names.push(node.value))
 
-  document.querySelector('#placeToYell').innerText = `${fName} ${fMidName} ${lMidName} ${lName}`
+  let nameString = names.join(' ');
+
+  document.querySelector('#placeToYell').innerText = nameString;
+
 }
-
-// const synth = window.speechSynthesis;
-// document.querySelector('#yell').addEventListener('click', run)
-//
-// function run() {
-//   const fName = document.querySelector('#firstName').value
-//   const fMidName = document.querySelector('#firstMiddle').value
-//   const lMidName = document.querySelector('#lastMiddle').value
-//   const lName = document.querySelector('#lastName').value
-//
-//   const yellText =  `${fName} ${fMidName} ${lMidName} ${lName}`
-//
-//   document.querySelector('#placeToYell').innerText = yellText
-//
-//   let yellThis = new SpeechSynthesisUtterance(yellText);
-//
-//   synth.speak(yellThis);
-// }
