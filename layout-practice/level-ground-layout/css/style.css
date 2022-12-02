@@ -1,0 +1,242 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(24, 31, 41);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+  height: 7rem;
+  background-color: rgb(105, 118, 136);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-left {
+  list-style: none;
+  margin: 0;
+  float: left;
+}
+
+.nav-left li {
+  display: inline-block;
+  height: 6rem;
+  width: 10rem;
+  text-align: center;
+}
+
+nav a {
+  float: left;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+nav img {
+  float: left;
+  width: 5%;
+  margin-left: 25%;
+}
+
+.nav-btn {
+  margin-top: 1.5rem;
+  background-color: white;
+  color: rgb(105, 118, 136);
+  margin-left: 40%;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.hero {
+  height: 40rem;
+  width: 100%;
+  color: white;
+  background-color: rgb(105, 118, 136);
+  clear: both;
+  margin-top: 0;
+  text-align: center;
+}
+
+.hero h1 {
+
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10rem;
+  margin-top: 0;
+}
+
+.hero p {
+  display: block;
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 5rem auto 10rem auto;
+}
+
+.hero a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.why {
+  height: 40rem;
+  width: 100%;
+  color: rgb(105, 118, 136);
+  background-color: white;
+  clear: both;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.why h2 {
+  margin-top: 10rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.why p {
+  display: block;
+  width: 70%;
+  margin-left: 14rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.visit {
+  display: block;
+  text-align: center;
+  float: left;
+  width: 50%;
+  height: 40rem;
+  background-color: rgb(220, 223, 226);
+  color: rgb(58, 64, 73);
+}
+
+.visit div {
+  display: block;
+  width: 25rem;
+  height: 15rem;
+  background-color: rgb(105, 118, 136);
+  margin: 5rem auto 1rem auto;
+}
+
+.visit div p {
+  padding: 6rem auto;
+}
+
+.visit p {
+  margin: 2rem auto;
+  width: 20rem
+}
+
+.visit a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  padding: 16px;
+  border: 2px solid rgb(168, 169, 170);
+  color: rgb(58, 64, 73);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.volunteer {
+  clear: both;
+  height: 35rem;
+  width: 100%;
+  background-color: white;
+  margin-top: 0;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.volunteer h2 {
+  margin: auto;
+  height: 8rem;
+  font-size: 3rem;
+}
+
+.volunteer p {
+  margin: auto;
+  height: 8rem;
+  width: 60rem;
+  font-size: 1.5rem;
+}
+
+.volunteer a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  padding: 16px;
+  border: 2px solid rgb(168, 169, 170);
+  border-radius: 8px;
+  color: rgb(58, 64, 73);
+}
+
+footer {
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(24, 31, 41);
+  color: white;
+}
+
+.footer-left {
+  padding-top: 2rem;
+  width: 80%;
+}
+
+.footer-left li {
+  display: inline-block;
+  width: 60px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
