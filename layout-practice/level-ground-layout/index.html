@@ -7,7 +7,14 @@
 	<meta name="keywords" content="one, two, three">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Level Ground Practice</title>
+	<title>Level Ground Flex</title>
+
+	<!-- Poppins Font Hotlink -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 
 	<!-- external CSS link -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -19,12 +26,14 @@
 
 <body>
 	<nav>
-		<ul class="nav-left">
-			<li><a href="#">CLASSES</a></li>
-			<li><a href="#">HIRE US</a></li>
-		</ul>
-		<img src="./lg_logo_white.png" alt="level ground logo" class="logo">
-		<a href="#" class="nav-btn">DONATE</a>
+		<span class="nav-left">
+			<a href="#">CLASSES</a>
+			<a href="#">HIRE US</a>
+		</span>
+		<a href="#"><img src="./lg_logo_white.png" alt="level ground logo" class="logo"></a>
+		<span class="nav-right">
+			<a href="#" class="nav-btn">DONATE</a>
+		</span>
 	</nav>
 	<section class="hero">
 		<h1>WHERE GRIT MEETS OPPORTUNITY</h1>
@@ -40,21 +49,24 @@
 			totam veniam in distinctio, tempora natus debitis unde ea illum voluptatibus nesciunt nihil dolore
 			excepturi.</p>
 	</section>
-	<section class="visit">
-		<div>
-		</div>
-		<h2>VISIT THE GYM</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque libero amet voluptatum incidunt at alias
-			fugiat aliquid quos molestiae adipisci?</p>
-		<a href="#">SEE CLASSES</a>
-	</section>
-	<section class="visit">
-		<div>
-		</div>
-		<h2>HAVE US VISIT YOU</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem nam aut quas ab quis cum at,
-			quam facilis numquam!</p>
-		<a href="#">HIRE US</a>
+	<section class="visits">
+		<section class="visit">
+			<div>
+			</div>
+			<h2>VISIT THE GYM</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque libero amet voluptatum incidunt at alias
+				fugiat aliquid quos molestiae adipisci?</p>
+			<a href="#">SEE CLASSES</a>
+		</section>
+		<section class="visit">
+			<div>
+			</div>
+			<h2>HAVE US VISIT YOU</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem nam aut quas ab quis cum
+				at,
+				quam facilis numquam!</p>
+			<a href="#">HIRE US</a>
+		</section>
 	</section>
 	<section class="volunteer">
 		<h2>VOLUNTEER WITH LEVEL GROUND</h2>
@@ -64,31 +76,16 @@
 		<a href="#">VOLUNTEER</a>
 	</section>
 	<footer>
-		<ul class="footer-left">
-			<li>
-				<i class="fa-brands fa-square-facebook"></i>
-			</li>
-			<li>
-				<i class="fa-brands fa-twitter"></i>
-			</li>
-			<li>
-				<i class="fa-solid fa-envelope"></i>
-			</li>
-		</ul>
-		<div class="site-map">
-			<h4>SITE MAP</h4>
-			<ul>
-				<li>Classes</li>
-				<li>Hire us</li>
-			</ul>
-		</div>
-		<div class="contribute">
-			<h4>CONTRIBUTE</h4>
-			<ul>
-				<li>Give</li>
-				<li>Volunteer</li>
-			</ul>
-		</div>
+		<span class="social-icons">
+			<i class="fa-brands fa-square-facebook"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-solid fa-envelope"></i>
+		</span>
+		<a href="#">Classes</a>
+		<a href="#">Hire Us</a>
+		<a href="#">Give</a>
+		<a href="#">Volunteer</a>
+		<span> © Level Ground Mixed Martial Arts | 50 Milk Street, Floor 17, Boston, MA 02109</span>
 	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

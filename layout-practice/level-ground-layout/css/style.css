@@ -1,6 +1,8 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Clear fix hack */
@@ -23,218 +25,230 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: rgb(24, 31, 41);
+  font-family: 'Poppins', sans-serif;
 }
 
+p {
+  width: 40%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* NAVBAR */
 nav {
-  height: 7rem;
-  background-color: rgb(105, 118, 136);
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
+  background-color: rgb(102 118 138);
+  padding: 2rem;
+  display: flex;
+}
+
+nav>* {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.25rem;
+}
+
+.logo {
+  width: 75px;
 }
 
 .nav-left {
-  list-style: none;
-  margin: 0;
-  float: left;
+  justify-content: flex-start;
 }
 
-.nav-left li {
-  display: inline-block;
-  height: 6rem;
-  width: 10rem;
-  text-align: center;
-}
-
-nav a {
-  float: left;
-  margin-top: 2rem;
+.nav-left a {
+  width: 100%;
   text-decoration: none;
   color: white;
 }
 
-nav img {
-  float: left;
-  width: 5%;
-  margin-left: 25%;
+.nav-left a:hover {
+  font-weight: 700;
 }
 
-.nav-btn {
-  margin-top: 1.5rem;
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-right a {
   background-color: white;
-  color: rgb(105, 118, 136);
-  margin-left: 40%;
+  text-decoration: none;
+  padding: 1rem 2rem;
   border-radius: 6px;
-  padding: 8px;
+  color: rgb(102 118 138);
 }
 
+.nav-right a:hover {
+  background-color: rgb(102 118 138);
+  color: white;
+  border: 2px solid white;
+  font-weight: 600;
+}
+
+/* HERO */
 .hero {
   height: 40rem;
-  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(102 118 138);
   color: white;
-  background-color: rgb(105, 118, 136);
-  clear: both;
-  margin-top: 0;
-  text-align: center;
 }
 
 .hero h1 {
-
   font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 10rem;
+  font-weight: 800;
   margin-top: 0;
-}
-
-.hero p {
-  display: block;
-  width: 70%;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.15;
-  margin: 5rem auto 10rem auto;
 }
 
 .hero a {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2rem;
   text-decoration: none;
   color: white;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
 }
 
-.why {
-  height: 40rem;
-  width: 100%;
-  color: rgb(105, 118, 136);
+.hero a:hover {
   background-color: white;
-  clear: both;
-  padding-top: 4rem;
-  text-align: center;
+  color: rgb(102 118 138);
+  font-weight: 600;
+}
+
+/* WHY */
+.why {
+  height: 35rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .why h2 {
-  margin-top: 10rem;
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-size: 3rem;
+  margin: 3rem 0;
 }
 
-.why p {
-  display: block;
-  width: 70%;
-  margin-left: 14rem;
-  padding-bottom: 5rem;
-  margin-bottom: 5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+/* VISITS */
+.visits {
+  height: 40rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(219 223 226);
 }
 
 .visit {
-  display: block;
-  text-align: center;
-  float: left;
-  width: 50%;
-  height: 40rem;
-  background-color: rgb(220, 223, 226);
-  color: rgb(58, 64, 73);
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .visit div {
-  display: block;
-  width: 25rem;
-  height: 15rem;
-  background-color: rgb(105, 118, 136);
-  margin: 5rem auto 1rem auto;
-}
-
-.visit div p {
-  padding: 6rem auto;
+  margin: 2rem 0;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(102 118 138);
 }
 
 .visit p {
-  margin: 2rem auto;
-  width: 20rem
+  font-size: 1rem;
+  margin: 2rem 0;
 }
 
-.visit a {
+.visit>a {
   text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: sans-serif;
-  display: inline-block;
-  width: 200px;
-  height: 60px;
-  padding: 16px;
-  border: 2px solid rgb(168, 169, 170);
-  color: rgb(58, 64, 73);
-  border-radius: 8px;
-  margin-bottom: 2rem;
+  color: black;
+  padding: 1.5rem 3rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center
 }
 
+.visit a:hover {
+  background-color: rgb(102 118 138);
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+/* VOLUNTEER */
 .volunteer {
-  clear: both;
   height: 35rem;
-  width: 100%;
-  background-color: white;
-  margin-top: 0;
-  padding-top: 4rem;
-  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .volunteer h2 {
-  margin: auto;
-  height: 8rem;
   font-size: 3rem;
-}
-
-.volunteer p {
-  margin: auto;
-  height: 8rem;
-  width: 60rem;
-  font-size: 1.5rem;
+  margin: 3rem 0;
 }
 
 .volunteer a {
   text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  display: inline-block;
-  width: 200px;
-  height: 60px;
-  padding: 16px;
-  border: 2px solid rgb(168, 169, 170);
-  border-radius: 8px;
-  color: rgb(58, 64, 73);
+  color: black;
+  padding: 1.5rem 3rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center
 }
 
-footer {
-  height: 30rem;
-  width: 100%;
-  background-color: rgb(24, 31, 41);
+.volunteer a:hover {
+  background-color: rgb(102 118 138);
+  border: none;
   color: white;
+  font-weight: 700;
 }
 
-.footer-left {
-  padding-top: 2rem;
-  width: 80%;
+/* FOOTER */
+footer {
+  padding: 0 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(22 31 42);
+  color: white;
+  font-size: 1.25rem;
 }
 
-.footer-left li {
-  display: inline-block;
-  width: 60px;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: left;
+.social-icons {
+  justify-content: space-around;
+}
+
+footer i {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+footer>* {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 0 1rem;
+}
+
+footer>span:last-child {
+  justify-self: flex-end;
 }
 
 /******************************************
