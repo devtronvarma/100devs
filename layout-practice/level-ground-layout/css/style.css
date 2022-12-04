@@ -67,9 +67,11 @@ nav a:hover {
 .item {
   color: white;
   padding: 1rem;
+  margin: 1rem 0;
 }
 
 .item.button a {
+  display: inline-block;
   background-color: white;
   text-decoration: none;
   padding: 1rem 2rem;
@@ -312,7 +314,7 @@ footer>span:last-child {
 /*******************************************/
 
 /* RESPONSIVENESS */
-@media all and (max-width: 900px) {
+@media all and (max-width: 699px) {
 
   .menu {
     display: flex;
@@ -347,4 +349,24 @@ footer>span:last-child {
     display: block;
   }
 
+}
+
+@media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+
+  .logo {
+    flex: 1
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle {
+    display: none;
+  }
 }
