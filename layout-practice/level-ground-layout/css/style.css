@@ -67,6 +67,8 @@ nav a:hover {
 
 .logo {
   width: 75px;
+  margin: 0;
+  padding: 0;
 }
 
 .item {
@@ -279,6 +281,10 @@ footer a {
     justify-content: space-around;
   }
 
+  .menu>* {
+    width: 25%;
+  }
+
   .logo {
     flex: 1
   }
@@ -286,13 +292,12 @@ footer a {
   .item {
     display: block;
     order: 1;
-    width: 30%;
   }
 
   .item.button {
-    width: auto;
     order: 2;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .toggle {
