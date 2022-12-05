@@ -51,11 +51,18 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
-  border-bottom: 2px solid white;
 }
 
 .menu {
   list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
 }
 
 .logo {
@@ -63,12 +70,17 @@ nav a:hover {
 }
 
 .item {
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
   color: white;
   margin: 1rem 0;
 }
 
 .item.button a {
   display: inline-block;
+  order: 3;
   background-color: white;
   text-decoration: none;
   padding: 1rem 2rem;
@@ -79,10 +91,19 @@ nav a:hover {
 .item.button a:hover {
   background-color: rgb(102 118 138);
   color: white;
-  border: 2px solid white;
-  font-weight: 600;
+  border: 1px solid white;
 }
 
+.toggle {
+  order: 1;
+  font-size: 3rem;
+  padding-right: 1rem;
+  color: white;
+}
+
+.active .item {
+  display: block;
+}
 
 /* HERO */
 .hero {
@@ -135,6 +156,7 @@ nav a:hover {
 /* VISITS */
 .visits {
   display: flex;
+  width: 100%;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -142,6 +164,7 @@ nav a:hover {
 }
 
 .visit {
+  width: 100%;
   padding: 2rem;
   display: flex;
   flex-flow: column;
@@ -250,67 +273,25 @@ footer a {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/* RESPONSIVENESS */
-@media all and (max-width: 699px) {
-
-  /* NAVBAR */
-  .menu {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .menu li a {
-    display: block;
-  }
-
-  .toggle {
-    order: 1;
-    font-size: 3rem;
-    padding-right: 1rem;
-    color: white;
-  }
-
-  .item.button {
-    order: 3;
-  }
-
-  .item {
-    order: 2;
-    width: 100%;
-    text-align: center;
-    display: none;
-  }
-
-  .active .item {
-    display: block;
-  }
-
-  /* HERO */
-
-  /* .hero {
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  } */
-
-
-}
-
+/* TABLET LAYOUT */
 @media all and (min-width: 700px) {
   .menu {
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .logo {
     flex: 1
   }
 
+  .item {
+    display: block;
+    order: 1;
+    width: 30%;
+  }
+
   .item.button {
     width: auto;
-    order: 1;
+    order: 2;
     display: block;
   }
 
