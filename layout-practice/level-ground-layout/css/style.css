@@ -118,7 +118,7 @@ nav a:hover {
   color: white;
 }
 
-.hero h1 {
+h1 {
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
@@ -194,6 +194,7 @@ nav a:hover {
   text-decoration: none;
   color: black;
   padding: 1.5rem 3rem;
+  margin: 2rem 0;
   border: 1px solid black;
   border-radius: 6px;
   text-align: center
@@ -302,5 +303,50 @@ footer a {
 
   .toggle {
     display: none;
+  }
+}
+
+
+/* DESKTOP LAYOUT */
+
+@media all and (min-width: 900px) {
+  p {
+    width: 40%;
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .visit {
+    width: 50%;
+  }
+
+  footer {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  footer>* {
+    width: 20%;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .social-icons>* {
+    width: 50px;
+    text-align: center;
+  }
+
+  footer>*:last-child {
+    width: 100%;
+    text-align: center;
   }
 }
