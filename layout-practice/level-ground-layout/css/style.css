@@ -257,7 +257,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(22 31 42);
-  color: white;
+  color: lightgray;
 }
 
 footer>* {
@@ -278,20 +278,19 @@ footer>* {
   align-items: center;
 }
 
-footer i {
-  font-size: 2rem;
-}
-
 footer a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: lightgray;
   width: 100%;
   text-align: center;
   padding: 0.5rem;
+  transition: all 0.5s;
 }
 
-footer a:hover {}
+footer a:hover {
+  color: white;
+}
 
 footer p {
   text-align: center;
@@ -358,7 +357,7 @@ footer p {
   }
 
   .hero>h1,
-  p {
+  .hero>p {
     text-align: left;
   }
 
