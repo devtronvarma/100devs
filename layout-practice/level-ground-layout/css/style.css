@@ -114,11 +114,11 @@ nav a:hover {
   padding: 20rem 2rem;
   margin: 1rem;
   flex-flow: column;
+  align-items: center;
   background-image: url('../img/kickboxer-img.png');
   color: white;
 }
 
-/* background-position: top 20% left 20%; */
 
 h1 {
   display: block;
@@ -127,6 +127,9 @@ h1 {
   font-weight: 800;
 }
 
+.hero p {
+  display: block;
+}
 
 .hero a {
   display: inline-block;
@@ -135,7 +138,7 @@ h1 {
   color: white;
   font-size: 1.25rem;
   padding: 1rem 2rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
   border: 1px solid white;
   border-radius: 6px;
   transition: all 0.5s;
@@ -155,6 +158,7 @@ h1 {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  border: 3px solid grey;
 }
 
 .why h2 {
@@ -165,7 +169,7 @@ h1 {
 /* VISITS */
 .visits {
   display: flex;
-  width: 100%;
+  margin: 1rem;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -194,7 +198,6 @@ h1 {
 }
 
 .visit p {
-  font-size: 1rem;
   margin: 2rem 0;
 }
 
@@ -217,7 +220,7 @@ h1 {
 /* VOLUNTEER */
 .volunteer {
   display: flex;
-  padding: 2rem;
+  padding: 4rem;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -247,8 +250,8 @@ h1 {
 
 /* FOOTER */
 footer {
-  padding: 0 3rem;
-  width: 100%;
+  padding: 1rem 3rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -288,6 +291,8 @@ footer a {
   padding: 0.5rem;
 }
 
+footer a:hover {}
+
 footer p {
   text-align: center;
 }
@@ -298,6 +303,8 @@ footer p {
 
 /* TABLET LAYOUT */
 @media all and (min-width: 700px) {
+
+  /* NAV */
   .menu {
     justify-content: space-around;
   }
@@ -324,23 +331,35 @@ footer p {
   .toggle {
     display: none;
   }
+
+  /* Increase Heading Sizes */
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    width: 40%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 }
 
 
 /* DESKTOP LAYOUT */
 
 @media all and (min-width: 900px) {
+
+  .hero {
+    align-items: flex-start;
+  }
+
+  .hero>h1,
   p {
-    width: 40%;
-    font-size: 1.25rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
+    text-align: left;
   }
 
   .visit {
@@ -361,17 +380,24 @@ footer p {
     justify-content: flex-end;
   }
 
+  .footer-links>* {
+    width: 25%;
+    font-size: 1.5rem;
+  }
+
   .social-icons {
     justify-content: flex-start;
   }
 
   .social-icons>* {
     width: 50px;
+    font-size: 2.5rem;
     text-align: center;
   }
 
   footer>*:last-child {
     width: 100%;
+    font-size: 1rem;
     text-align: center;
   }
 }
