@@ -26,6 +26,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background: ;
 }
 
 p {
@@ -40,8 +41,9 @@ p {
 
 /* NAVBAR */
 nav {
-  background-color: rgb(102 118 138);
-  padding: 2rem;
+  background-color: black;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 nav a {
@@ -83,17 +85,17 @@ nav a:hover {
 .item.button a {
   display: inline-block;
   order: 3;
-  background-color: white;
   text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 6px;
-  color: rgb(102 118 138);
+  border: 1px solid white;
+  color: white;
+  transition: all 0.5s;
 }
 
 .item.button a:hover {
-  background-color: rgb(102 118 138);
-  color: white;
-  border: 1px solid white;
+  background-color: white;
+  color: black;
 }
 
 .toggle {
@@ -110,17 +112,19 @@ nav a:hover {
 /* HERO */
 .hero {
   display: flex;
-  padding: 2rem;
+  padding: 12rem 2rem;
+  margin: 1rem;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(102 118 138);
+  background-image: url('../img/level-ground-bg.png');
+  background-position: bottom;
   color: white;
 }
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 800;
   margin-top: 0;
 }
@@ -128,22 +132,25 @@ h1 {
 .hero a {
   text-align: center;
   text-decoration: none;
+  background-color: black;
   color: white;
   font-size: 1.25rem;
   padding: 1rem 2rem;
   margin: 2rem 0;
   border-radius: 6px;
+  transition: all 0.5s;
 }
 
 .hero a:hover {
   background-color: white;
-  color: rgb(102 118 138);
+  color: black;
   font-weight: 600;
 }
 
 /* WHY */
 .why {
-  padding: 4rem 2rem;
+  padding: 12rem 2rem;
+  margin: 1rem;
   display: flex;
   flex-flow: column;
   align-items: center;
