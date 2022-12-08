@@ -21,7 +21,9 @@
 /* BASE STYLES
 /*******************************************/
 body {
+  background-image: url('../img/restaurant-bg.png');
   font-family: 'Lato', sans-serif;
+  color: white;
   text-align: center;
 }
 
@@ -33,9 +35,9 @@ body {
 
 /* NAVBAR */
 nav {
-  padding: 2rem;
+  padding: 1rem;
   margin: 1rem;
-  background-color: black;
+  border: 2px solid white;
 }
 
 nav a {
@@ -63,6 +65,10 @@ nav a {
   font-size: 3rem;
 }
 
+.company-name {
+  display: none;
+}
+
 .toggle {
   font-size: 3rem;
 }
@@ -81,6 +87,16 @@ nav a {
 
 .active .item {
   display: block
+}
+
+/* MAIN */
+main {
+  margin: 1rem;
+  padding: 3rem 0;
+}
+
+main h1 {
+  font-size: 4rem;
 }
 
 /******************************************
