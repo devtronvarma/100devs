@@ -99,6 +99,36 @@ main h1 {
   font-size: 4rem;
 }
 
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+input {
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  border: none;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5rem 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: rgba(255, 69, 0, 0.5);
+  color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: orangered;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
