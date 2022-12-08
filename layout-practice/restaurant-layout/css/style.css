@@ -185,6 +185,22 @@ input {
   background-color: rgba(255, 69, 0, 0.7);
 }
 
+/* ONLINE ORDER */
+
+.online-order {
+  margin: 1rem;
+  padding: 4rem 2rem;
+  color: black;
+  background-color: white;
+  text-align: right;
+}
+
+.online-order span {
+  color: orangered
+}
+
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
