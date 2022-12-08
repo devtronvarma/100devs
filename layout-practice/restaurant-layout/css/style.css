@@ -119,14 +119,39 @@ input {
   padding: 0.5rem 5rem;
   text-align: center;
   font-size: 1.5rem;
-  background-color: rgba(255, 69, 0, 0.5);
+  background-color: rgba(255, 69, 0, 0.7);
   color: white;
   border-radius: 3px;
+  border: 2px solid white;
   transition: all 0.5s;
 }
 
 .button:hover {
   background-color: orangered;
+}
+
+.main-socials {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.main-socials a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  display: block;
+}
+
+.main-socials i {
+  color: orangered;
+  margin-right: 1rem;
+}
+
+.main-socials i:hover {
+  color: white;
 }
 
 /******************************************
