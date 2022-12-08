@@ -176,6 +176,15 @@ input {
   color: orangered
 }
 
+.about .button {
+  background-color: orangered;
+  transition: 0.5s;
+}
+
+.about .button:hover {
+  background-color: rgba(255, 69, 0, 0.7);
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
