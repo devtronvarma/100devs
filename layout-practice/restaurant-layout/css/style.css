@@ -234,6 +234,12 @@ input {
   color: orangered;
 }
 
+.order-categories img {
+  width: 250px;
+  height: 320px;
+  margin: 1rem;
+}
+
 .placeholder {
   width: 200px;
   height: 300px;
