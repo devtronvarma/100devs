@@ -27,6 +27,15 @@ body {
   text-align: center;
 }
 
+h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -108,7 +117,7 @@ form {
 input {
   text-align: center;
   margin: 1.5rem auto;
-  padding: 1rem 4rem;
+  padding: 1rem 5rem;
   font-size: 1.5rem;
   border-radius: 3px;
   border: none;
@@ -116,7 +125,7 @@ input {
 
 .button {
   text-decoration: none;
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 3rem;
   text-align: center;
   font-size: 1.5rem;
   background-color: rgba(255, 69, 0, 0.7);
@@ -152,6 +161,19 @@ input {
 
 .main-socials i:hover {
   color: white;
+}
+
+/* ABOUT */
+.about {
+  margin: 1rem;
+  padding: 4rem 2rem;
+  color: black;
+  background-color: white;
+  text-align: left;
+}
+
+.about span {
+  color: orangered
 }
 
 /******************************************
