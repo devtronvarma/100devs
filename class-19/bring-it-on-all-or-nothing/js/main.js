@@ -4,8 +4,8 @@ let thing = true;
 alert(thing);
 
 // Declare a variable, reassign it to your favorite color, and console log the value
-let color = white;
-color = blue;
+let color = 'white';
+color = 'blue';
 console.log(color);
 
 // *Functions*
