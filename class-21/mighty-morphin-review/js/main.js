@@ -24,10 +24,7 @@ threeNums(5, 6, 4);
 
 // *Conditionals*
 //Create a function that returns heads or tails randomly and as fairly as possible. Call the function.
-function headsOrTails() {
-  let num = Math.floor(Math.random() * 2);
-  return num === 1 ? "heads" : "tails";
-}
+const headsOrTails = () => (Math.random() >= 0.5 ? `heads` : `tails`);
 
 headsOrTails();
 
