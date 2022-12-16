@@ -15,18 +15,12 @@ const squareNums = (arr) => {
 //Print the reverse of that string to the console
 const reverseString = (s) => {
   let arr = s.split("");
-  console.log(arr.join(""));
+  console.log(arr.reverse().join(""));
 };
 
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
 const isPalindrome = (s) => {
-  let arr = s.split("");
-  for (let i = 0; i < Math.floor(arr.length / 2); i++) {
-    if (arr[i] !== arr[arr.length - 1 - i]) {
-      return false;
-    }
-  }
-
-  return true;
+  let reversed = s.split("").reverse().join("");
+  return s === reversed;
 };
