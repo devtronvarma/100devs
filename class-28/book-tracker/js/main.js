@@ -19,10 +19,10 @@ function getFetch() {
         localStorage.setItem("books", books);
       }
 
-      //document.querySelector("h2").innerText = localStorage.getItem("books");
-
+      // add book titles to list in DOM
       let booksArray = localStorage.getItem("books").split(" ; ");
-      console.log(booksArray);
+
+      // loop through each book element in books localStorage
       booksArray.forEach((book) => {
         let li = document.createElement("li");
         let ul = document.querySelector("ul");
